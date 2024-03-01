@@ -1,0 +1,18 @@
+operacao = input('Por favor, seleciona a opção que deseja executar: 0. Adição 1. Subtração 2. Multiplicação  3. Divisão: ')
+if operacao > '3':
+    print("Não foi selecionado nenhuma opção acima, comece novamente!")
+else:
+    numero_1 = int(input("Entre com o primeiro valor:"))
+    numero_2 = int(input("Entre com o segundo valor:"))
+
+if operacao == '0':
+    print(numero_1,'+',numero_2,'=', (numero_1 + numero_2))
+
+elif operacao == '1':
+    print(numero_1,'-', numero_2,'=',(numero_1 - numero_2))
+
+elif operacao == '2':
+    print(numero_1,'*',numero_2,'=', (numero_1 * numero_2))
+
+elif operacao == '3':
+    print(numero_1,'/',numero_2 ,'=', (numero_1 / numero_2))
